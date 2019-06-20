@@ -1,0 +1,23 @@
+{
+  "name": "leecode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha '**/*.spec.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Joanchx/LeeCode.git"
+  },
+  "author": "Joan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Joanchx/LeeCode/issues"
+  },
+  "homepage": "https://github.com/Joanchx/LeeCode#readme",
+  "dependencies": {
+    "mocha": "^6.1.4",
+    "power-assert": "^1.6.1"
+  }
+}
