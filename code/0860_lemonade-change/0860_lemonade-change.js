@@ -35,8 +35,8 @@
 
 
 var lemonadeChange = function (bills) {
-    // f:五元
-    // t:十元
+    // f:$5
+    // t:$10
     let f = 0, t = 0;
     const len = bills.length;
     for (let i = 0; i < len; i++) {
