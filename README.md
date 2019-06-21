@@ -13,8 +13,11 @@ npm install
 npm test
 ```
 
-## todo
+## done
 
 Code_0001. [Two Sum](https://leetcode.com/problems/two-sum/)
 
 Code_1051. [Height checker](https://leetcode.com/problems/height-checker/)
+
+Code_0860. [lemonade-change](https://leetcode.com/problems/lemonade-change/)
+
