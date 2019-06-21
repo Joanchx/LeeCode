@@ -21,3 +21,5 @@ Code_1051. [Height checker](https://leetcode.com/problems/height-checker/)
 
 Code_0860. [lemonade-change](https://leetcode.com/problems/lemonade-change/)
 
+Code_0066. [lemonade-change](https://leetcode.com/problems/plus-one/)
+
