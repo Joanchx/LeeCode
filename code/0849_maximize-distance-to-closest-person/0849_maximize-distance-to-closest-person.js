@@ -1,5 +1,5 @@
 /**
- * @date 2019-06-20
+ * @date 2019-06-23
  * https://leetcode.com/problems/maximize-distance-to-closest-person/
  * 
  * 
@@ -47,7 +47,6 @@ var maxDistToClosest = function (seats) {
 }
 
 module.exports = maxDistToClosest;
-
 
 
 
