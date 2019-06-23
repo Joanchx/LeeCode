@@ -25,3 +25,5 @@ Code_0066. [plus-one](https://leetcode.com/problems/plus-one/)
 
 Code_0414. [third-maximum-number](https://leetcode.com/problems/third-maximum-number/)
 
+Code_0849. [maximize-distance-to-closest-person](https://leetcode.com/problems/maximize-distance-to-closest-person/)
+
