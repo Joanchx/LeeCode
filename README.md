@@ -13,22 +13,12 @@ npm install
 npm test
 ```
 
-## done
+<!-- ## done -->
 
-Code_0001. [two-sum](https://leetcode.com/problems/two-sum/)
 
-Code_1051. [height-checker](https://leetcode.com/problems/height-checker/)
 
-Code_0860. [lemonade-change](https://leetcode.com/problems/lemonade-change/)
+<!-- Code_0039. [combination-sum](https://leetcode.com/problems/combination-sum/)【#todo#】 -->
+<!-- Code_0039. [combination-sum](https://leetcode.com/problems/combination-sum/)【#方法3：位移#】 -->
 
-Code_0066. [plus-one](https://leetcode.com/problems/plus-one/)
-
-Code_0414. [third-maximum-number](https://leetcode.com/problems/third-maximum-number/)
-
-Code_0849. [maximize-distance-to-closest-person](https://leetcode.com/problems/maximize-distance-to-closest-person/)
-
-Code_0039. [combination-sum](https://leetcode.com/problems/combination-sum/)【#todo#】
-
-Code_0905. [combination-sum](https://leetcode.com/problems/sort-array-by-parity/)
 
 

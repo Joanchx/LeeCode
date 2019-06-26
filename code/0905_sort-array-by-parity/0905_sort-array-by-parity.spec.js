@@ -9,7 +9,6 @@ describe('0905_sortArrayByParity', () => {
         }
 
         const result = sortArrayByParity(obj.numArray)
-        // [2,4,3,1]
         assert.ok(result, [2, 4, 3, 1])
     })
 })
