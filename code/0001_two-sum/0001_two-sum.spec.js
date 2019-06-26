@@ -10,6 +10,6 @@ describe('0001_two-sum', () => {
         }
 
         const result = twoSum(obj.numArray, obj.target)
-        assert.equal(`${result}`, `${[0, 1]}`)
+        assert.deepEqual(result, [0, 1])
     })
 });
