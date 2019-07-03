@@ -1,9 +1,7 @@
 /**
  * @date 2019-06-23
  * https://leetcode.com/problems/maximize-distance-to-closest-person/
- * 
- * 
- * 
+ * --------------------------------------------------------------------------------------------------------
  * 
  * In a row of seats, 1 represents a person sitting in that seat, and 0 represents that the seat is empty. 
  * There is at least one empty seat, and at least one person sitting.
@@ -18,7 +16,7 @@
  * If Alex sits in any other open seat, the closest person has distance 1.
  * Thus, the maximum distance to the closest person is 2.
  * 
- * 
+ * --------------------------------------------------------------------------------------------------------
  * 
  * 解题思路：
  * 1、循环便利数组，当前元素的前n个与后n个元素均不为1时，最远距离增加1

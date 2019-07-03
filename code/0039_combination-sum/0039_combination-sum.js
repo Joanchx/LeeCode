@@ -1,23 +1,18 @@
 /**
  * @date 2019-06-26
  * https://leetcode.com/problems/combination-sum/
- * 
+ * --------------------------------------------------------------------------------------------------------
  * Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target.
  * The same repeated number may be chosen from candidates unlimited number of times.
  * 
  *  Example:
  * Input: candidates = [2,3,6,7], target = 7,
  * A solution set is:
- * [
- *   [7],
- *   [2,2,3]
- * ]
- * 
- * 
- * 
+ * [ [7], [2,2,3] ]
+ * --------------------------------------------------------------------------------------------------------
  * 解题思路：
- *  1、数组去重/排序
- *  2、递归查找相机刚好为target的数组，push到目标数组中
+ *  1、数组去重/排序;
+ *  2、递归查找相机刚好为target的数组，push到目标数组中;
  *  
  *                   2                 |       3                     |      6             |     7
  *                                  
@@ -31,7 +26,6 @@
  * @param {number} target
  * @return {number[][]}
  */
-
 var combinationSum = function (candidates, target) {
     const array = [...new Set(candidates)];
     array.sort((a, b) => a - b);
@@ -55,7 +49,7 @@ var combinationSum = function (candidates, target) {
             indexs.push(array[i]);
             const _target = target - array[i];
             add(array, _target, indexs, results, i);
-            //不影响其他项的循环
+            //为不影响其他项的循环
             indexs.pop();
         }
     }

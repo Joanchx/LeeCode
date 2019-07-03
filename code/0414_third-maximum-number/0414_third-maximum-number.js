@@ -1,15 +1,14 @@
 /**
  * @date 2019-06-23
  * https://leetcode.com/problems/third-maximum-number/
- * 
+ * --------------------------------------------------------------------------------------------------------
  * Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).
  *  
- * 
  * Example:
  * Input: [3, 2, 1]
  * Output: 1
  * Explanation: The third maximum is 1.
- * 
+ * --------------------------------------------------------------------------------------------------------
  * 
  * 解题思路：
  * 1、去重

@@ -1,16 +1,13 @@
 /**
  * @date 2019-06-26
  * https://leetcode.com/problems/power-of-two/
- * 
+ * --------------------------------------------------------------------------------------------------------
  * Given an integer, write a function to determine if it is a power of two.
- * 
- *  Example:
- *  Input: 1
- *  Output: true 
- *  Explanation: 20 = 1
- * 
- * 
- * 
+ * Example:
+ * Input: 1
+ * Output: true 
+ * Explanation: 20 = 1
+ * --------------------------------------------------------------------------------------------------------
  * 解题思路：
  * 方法一：
  *      1、与2相除结果为1则是2的幂
@@ -38,13 +35,11 @@ var isPowerOfTwo = function (n) {
     return false;
 }
 
-
-
-
-var isPowerOfTwo2 = function (n) {
-    if (n <= 0) return false;
-    else if (n & (n - 1)) return false;
-    else return true;
-};
-
 module.exports = isPowerOfTwo;
+
+//方法二
+// var isPowerOfTwo = function (n) {
+//     if (n <= 0) return false;
+//     else if (n & (n - 1)) return false;
+//     else return true;
+// };
