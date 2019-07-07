@@ -1,4 +1,4 @@
-# leecode
+# leetcode
 
 [leecode](https://leetcode.com)
 
