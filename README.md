@@ -13,12 +13,9 @@ npm install
 npm test
 ```
 
-<!-- ## done -->
+<!-- ## todo-->
+<!-- Code_0039【方法3：位移】、Code_0696 -->
 
-
-
-<!-- Code_0039. [combination-sum](https://leetcode.com/problems/combination-sum/)【#todo#】 -->
-<!-- Code_0039. [combination-sum](https://leetcode.com/problems/combination-sum/)【#方法3：位移#】 -->
 
 
 
