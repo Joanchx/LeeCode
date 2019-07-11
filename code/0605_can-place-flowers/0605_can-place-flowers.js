@@ -18,8 +18,8 @@
  * n is a non-negative integer which won't exceed the input array size.
  * --------------------------------------------------------------------------------------------------------
  * 解题思路：
- * 1、排除特殊情况，
- * 2、遍历查找前后均为0的元素【考虑边界问题】，比较目标值大小
+ * 1、前后位补0
+ * 2、遍历查找前后均为0的元素，获取目标值
  *  */
 
 /**
@@ -27,33 +27,55 @@
  * @param {number} n
  * @return {boolean}
  */
+
 var canPlaceFlowers = function (flowerbed, n) {
-    //种花的棵树
-    let count = 0;
-    const len = flowerbed.length;
-    //特殊情况【0】【0,0】
-    if (len === 1 && flowerbed[0] === 0)
-        return (1 >= n)
-
-    if (len === 2 && flowerbed[0] === flowerbed[1] === 0)
-        return 1 >= n
-
-    //遍历
-    for (let i = 0; i < len; i++) {
-        if (flowerbed[i] === 0) {
-            if (i === 0 && flowerbed[1] === 0) {
-                count++;
-                i += 1;
-            } else if (flowerbed[i - 1] === 0 && flowerbed[i + 1] === 0) {
-                count++;
-                i += 1;
-            } else if (i === (len - 1) && flowerbed[i - 1] === 0) {
-                count++;
-                i += 1;
-            }
+    //数组前后位补0，无须考虑边界问题
+    flowerbed.push(0);
+    flowerbed.unshift(0);
+    for (let i = 0, len = flowerbed.length; i < len; i++) {
+        //前后位均为0，则种花
+        if (flowerbed[i] === 0 && flowerbed[i + 1] === 0 && flowerbed[i - 1] === 0) {
+            n--;
+            i++;
         }
     }
-    return count >= n;
-};
+    return n <= 0
+}
 
 module.exports = canPlaceFlowers;
+
+
+/*
+* 解题思路：
+*   1、排除特殊情况，
+*   2、遍历查找前后均为0的元素【考虑边界问题】，比较目标值大小
+*
+*/
+// var canPlaceFlowers = function (flowerbed, n) {
+//     //种花的棵树
+//     let count = 0;
+//     const len = flowerbed.length;
+//     //特殊情况【0】【0,0】
+//     if (len === 1 && flowerbed[0] === 0)
+//         return (1 >= n)
+
+//     if (len === 2 && flowerbed[0] === flowerbed[1] === 0)
+//         return 1 >= n
+
+//     //遍历
+//     for (let i = 0; i < len; i++) {
+//         if (flowerbed[i] === 0) {
+//             if (i === 0 && flowerbed[1] === 0) {
+//                 count++;
+//                 i += 1;
+//             } else if (flowerbed[i - 1] === 0 && flowerbed[i + 1] === 0) {
+//                 count++;
+//                 i += 1;
+//             } else if (i === (len - 1) && flowerbed[i - 1] === 0) {
+//                 count++;
+//                 i += 1;
+//             }
+//         }
+//     }
+//     return count >= n;
+// };
