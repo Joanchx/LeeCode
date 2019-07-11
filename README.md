@@ -1,6 +1,6 @@
 # leetcode
 
-[leecode](https://leetcode.com)
+[leetcode](https://leetcode.com)
 
 
 ```shell
