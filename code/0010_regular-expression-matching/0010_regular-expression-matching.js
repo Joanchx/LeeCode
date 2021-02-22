@@ -50,7 +50,7 @@ var isMatch = function (s, p) {
     for (let i = 0, len = modeArr.length, m; i < len; i++) {
         //.*   a*   asdf .
         m = modeArr[i].split('');
-        console.log('----m', m)
+        // console.log('----m', m)
         //第二位如果是*，则为有模式
         if (m[1] === '*') {
             if (m[0] === '.') {
@@ -62,7 +62,7 @@ var isMatch = function (s, p) {
                 }
             }
         } else {
-            console.log('m--->>', m)
+            // console.log('m--->>', m)
             for (let j = 0, jl = m.length; j < jl; j++) {
                 if (s[current] === m[j] || m[j] === '.') {
                     current++;
@@ -72,8 +72,8 @@ var isMatch = function (s, p) {
             }
         }
     }
-    console.log('current', current)
-    console.log(sLen, 'sLen')
+    // console.log('current', current)
+    // console.log(sLen, 'sLen')
     return current === sLen
 };
 module.exports = isMatch;
