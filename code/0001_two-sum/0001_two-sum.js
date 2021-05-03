@@ -17,14 +17,36 @@
  *  @param {Number} target
  * */
 const twoSum = function (nums, target) {
+	for (let i = 0; i < nums.length; i++) {
+		for (let j = i + 1; j < nums.length; j++) {
+			if (nums[i] + nums[j] == target) {
+				return [i, j];
+			}
+		}
+	}
+};
 
-    for (let i = 0; i < nums.length; i++) {
-        for (let j = i + 1; j < nums.length; j++) {
-            if ((nums[i] + nums[j]) == target) {
-                return [i, j]
-            }
-        }
-    }
+
+/**
+ *  @date 2021-05-03
+ * 解题思路：
+ * 1、遍历数组，将目标值存入obj中
+ * 2、找到目标值则返回；
+ * 【空间换时间】
+ */
+const twoSum = function (nums, target) {
+	//存储需要的值
+	const obj = {};
+	for (let i = 0; i < nums.length; i++) {
+		const num = nums[i];
+		//找到目标值，则返回
+		if (num in obj) {
+			return [obj[num], i];
+		} else {
+			// 以目标值为key值存储当前索引
+			obj[target - num] = i;
+		}
+	}
 };
 
 module.exports = twoSum;
